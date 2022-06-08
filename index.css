@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to left, #585DFE, #FB3796);
+}
+
+.title {
+    color: white;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+    
+#number-el {
+    font-size: 150px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.main {
+    background-color: #1F2937;
+    
+}
+
+.convert {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+#increment-btn {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+#convert-btn {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+input {
+
+    border: none;
+    font-size: 20px;
+    max-width: 100px;
+    background: transparent;
+}
