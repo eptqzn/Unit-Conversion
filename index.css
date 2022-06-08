@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #1F2937;
 }
 
 header {
@@ -19,12 +20,13 @@ header {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 60px;
     margin: 0px;
 }
 
 h3 {
     margin: 0px;
+    font-size: 25px;
 }
 
 .main {
@@ -41,28 +43,27 @@ h3 {
 .buttons {
     text-align: center;
     padding-bottom: 25px;
-    font-size: 25px;
+
 }
+
 #increment-btn {
     background: transparent;
     color: white;
     border-radius: 10px;
+    font-size: 50px;
+    margin: 50px;
+
 }
 
 #convert-btn {
     background: transparent;
     color: white;
     border-radius: 10px;
+    font-size: 50px;
+    margin: 50px;
 }
 
 p {
     padding-bottom: 15px;
-}
-
-input {
-
-    border: none;
-    font-size: 20px;
-    max-width: 100px;
-    background: transparent;
+    font-size: 18px;
 }
