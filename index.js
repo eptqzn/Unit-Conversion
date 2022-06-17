@@ -1,28 +1,39 @@
-let lengthEl = document.getElementById("length-el");
-let volumeEl = document.getElementById("volume-el");
-let massEl = document.getElementById("mass-el");
-let numberEl = document.getElementById("number-el");
-let count = 0;
-let length = 0;
-let volume = 0;
-let mass = 0;
+const btnEl = document.getElementById("button-el")
+const inputEl = document.getElementById("input-el")
+let lengthEl = document.getElementById("length")
+let volumeEl = document.getElementById("volume")
+let massEl = document.getElementById("mass")
 
-function increment() {
-    count += +1
-    numberEl.textContent = count
-
-}
-
-function convert() {
-    meters = count * 3.28084
-    feet = count / 3.28084
-    lengthEl.textContent = count + " meters " + "= " + meters.toFixed(3) + " feet" + " | " + count + " feet " + "= " + feet.toFixed(3) + " meters"
-    liters = count / 4.54609
-    gallons = count * 4.54609
-    volumeEl.textContent = count + " liters " + "= " + liters.toFixed(3) + " gallons" + " | " + count + " gallons " + "= " + gallons.toFixed(3) + " liters"
-    kilo = count * 2.20462
-    pound = count / 2.20462
-    massEl.textContent = count + " kilos " + "= " + kilo.toFixed(3) + " pounds" + " | " + count + " pounds " + "= " + pound.toFixed(3) + " kilos"
-    count = 0
-    numberEl.textContent = count
-}
+btnEl.addEventListener("click", function(){
+    meters = inputEl.value * 3.281
+    feet = inputEl.value / 3.281
+    lengthEl.textContent = `${inputEl.value}
+    meters =
+    ${meters.toFixed(3)} 
+    feet | 
+    ${inputEl.value} 
+    feet = 
+    ${feet.toFixed(3)} 
+    meters`
+    liters = inputEl.value / 4.54609
+    gallons = inputEl.value * 4.54609
+    volumeEl.textContent = `${inputEl.value}
+    liters = 
+    ${liters.toFixed(3)} 
+    gallons | 
+    ${inputEl.value}
+    gallons =
+    ${gallons.toFixed(3)}  
+    liters`
+    kilo = inputEl.value * 2.204
+    pound = inputEl.value / 2.204
+    massEl.textContent = `${inputEl.value}
+    kilos = 
+    ${kilo.toFixed(3)}
+    pounds | 
+    ${inputEl.value}
+    pounds = 
+    ${pound.toFixed(3)}
+    kilos`
+    inputEl.value = 0
+})
