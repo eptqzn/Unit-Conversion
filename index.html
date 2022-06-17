@@ -2,33 +2,32 @@
     <head>
         <link rel="stylesheet" href="index.css">
     </head>
-    
     <body>
-        
-        <header>
-            
-            <div class="title">
-                <h2>Metric/Imperial Unit Conversion</h2>
-                <p id="number-el">0</p>
-            </div>
-            
-            <div class="buttons">
-                <button id="increment-btn" onclick="increment()">INCREMENT</button>
-                <button id="convert-btn" onclick="convert()">CONVERT</button>
-            </div>
-        </header>
-        
         <div class="main">
-            <div class="convert">
-                <h3>Length (Meter/Feet)</h3>
-                <p id="length-el">0 meters = 0 Feet</p>
-                <h3>Volume (Liters/Gallons)</h3>
-                <p id="volume-el">0 Liters = 0 Gallons</p>
-                <h3>Mass (Kilograms/Pounds)</h3>
-                <p id="mass-el">0 Kilos = 0 Pounds</p>
+        <h3>Metric/Imperial Unit Conversion</h3>
+        <div class="inp">
+        <input id="input-el" type="number">
+        </div>
+        <div id="btn">
+        <button id="button-el">Convert</button>
+        </div>
+        </div>
+        <div class="bottom">
+            <div class="units">
+                <div class="length">
+                    <h4>Length (Meter/Feet)</h4>
+                    <p id="length">0 meter = 0 feet | 0 feet = 0 meter</p>
+                </div>
+                <div class="volume">
+                    <h4>Volume (Liters/Gallons)</h4>
+                    <p id="volume">0 liter = 0 gallon | 0 gallon = 0 liter</p>
+                </div>
+                <div class="mass">
+                    <h4>Mass (Kilograms/Pounds)</h4>
+                    <p id="mass">0 kilo = 0 pound | 0 pound = 0 kilo</p>
+                </div>
             </div>
         </div>
         <script src="index.js"></script>
-        
     </body>
 </html>
